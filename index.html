@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,19 +10,28 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./src/output.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <style>
             .container {
-                width: 80%;
+                width: 80% !important;
                 margin: 0 auto;
             }
         </style>
     </head>
+
     <body>
-        <header style="background: url(./src/images/hero.svg) no-repeat center; background-size: cover;">
-            <div class="">
+        <header
+            style="
+                background: url(./images/hero.svg) no-repeat center;
+                background-size: cover;
+            "
+        >
+            <div class="border-b-2 border-white border-solid">
                 <div class="container flex justify-between items-center py-6">
-                    <ul class="text-white flex gap-10">
+                    <ul
+                        class="text-white flex gap-10 max-xl:gap-5 max-[900px]:hidden"
+                    >
                         <li>
                             <a href="#">Контрагентам</a>
                         </li>
@@ -35,10 +42,16 @@
                             <a href="#">Вакансии</a>
                         </li>
                     </ul>
-                    <div class="w-30">
-                        <img class="w-[100%]" src="./src/images/OJJO.svg" alt="logo" />
+                    <div class="w-25 max-xl:w-20">
+                        <img
+                            class="w-[100%]"
+                            src="./images/OJJO.svg"
+                            alt="logo"
+                        />
                     </div>
-                    <ul class="text-white flex gap-10 items-center">
+                    <ul
+                        class="text-white flex gap-10 items-center max-xl:gap-5 max-[550px]:hidden"
+                    >
                         <li class="flex gap-4 items-center">
                             <i
                                 class="fa-solid fa-magnifying-glass"
@@ -60,20 +73,315 @@
                             ></i>
                         </li>
                     </ul>
+                    <div class="hidden max-[900px]:block">
+                        <i
+                            class="fa-solid fa-bars text-white"
+                            style="font-size: 24px"
+                        ></i>
+                    </div>
                 </div>
-                 <div class="container pt-96 pb-20 m-auto text-center">
-                    <h1 class="font-bold text-4xl text-white pb-12">Долго, дорого, богато!</h1>
-                    <button class="py-4 px-9 text-lg font-medium text-white border-2 border-solid border-white bg-[#333333]">каталог изделий </button>
+                <div class="container pt-96 pb-20 m-auto text-center">
+                    <h1
+                        class="font-bold text-4xl text-white pb-12 max-md:text-3xl"
+                    >
+                        Долго, дорого, богато!
+                    </h1>
+                    <button
+                        class="py-4 p-9 text-lg font-medium text-white border-2 border-solid border-white bg-[#333333] max-md:py-3 px-5"
+                    >
+                        каталог изделий
+                    </button>
+                </div>
+            </div>
+            <div class="container flex gap-4 py-8 justify-center flex-wrap">
+                <div class="border-r-2 border-white border-solid pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
+                </div>
+                <div class="border-r-2 border-white border-solid pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
+                </div>
+                <div class="border-r-2 border-white border-solid pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
+                </div>
+                <div class="border-r-2 border-white border-solid pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
+                </div>
+                <div class="border-r-2 border-white border-solid pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
+                </div>
+                <div class="pr-4">
+                    <img src="./images/hero-bt/hero-bt.svg" alt="" />
                 </div>
             </div>
         </header>
         <main>
-            <!-- <section id="hero" style="background: url(./images/hero.svg) no-repeat center; background-size: cover;">
-                <div class="container pt-96 pb-20 m-auto text-center">
-                    <h1>Долго, дорого, богато!</h1>
-                    <button>каталог изделий </button>
+            <section class="py-24">
+                <p class="font-normal text-xl text-center text-[#333]">
+                    K мероприятиям
+                </p>
+                <h2 class="font-bold text-center text-3xl pt-4">
+                    Настоящая красота здесь!
+                </h2>
+                <div class="ap-tab py-14">
+                    <ul
+                        class="ap-tab-list flex gap-3 items-center flex-wrap container"
+                    >
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >Свадьба</a
+                            >
+                        </li>
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >МУЖУ</a
+                            >
+                        </li>
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >жене</a
+                            >
+                        </li>
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >партнеру</a
+                            >
+                        </li>
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >коллекции</a
+                            >
+                        </li>
+                        <li class="ap-tab-item p-3">
+                            <a
+                                class="ap-tab-link p-3 rounded-md hover:bg-black hover:text-white focus:bg-black focus:text-white"
+                                href="#"
+                                >редкость</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </section> -->
+                <div class="ap-tab-container container">
+                    <div class="ap-tab-content">
+                        <div
+                            class="grid grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1"
+                        >
+                            <img src="./images/ring/img-1.svg" alt="img" />
+                            <img src="./images/ring/img-2.svg" alt="img" />
+                            <img src="./images/ring/img-3.svg" alt="img" />
+                            <img src="./images/ring/img-4.svg" alt="img" />
+                            <img src="./images/ring/img-5.svg" alt="img" />
+                            <img src="./images/ring/img-6.svg" alt="img" />
+                        </div>
+                    </div>
+                    <div class="ap-tab-content">
+                        <div
+                            class="grid grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1"
+                        >
+                            <img src="./images/ring/img-6.svg" alt="img" />
+                            <img src="./images/ring/img-5.svg" alt="img" />
+                            <img src="./images/ring/img-4.svg" alt="img" />
+                            <img src="./images/ring/img-3.svg" alt="img" />
+                            <img src="./images/ring/img-2.svg" alt="img" />
+                            <img src="./images/ring/img-1.svg" alt="img" />
+                        </div>
+                    </div>
+                    <div class="ap-tab-content">
+                        <div
+                            class="grid grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1"
+                        >
+                            <img src="./images/ring/img-3.svg" alt="img" />
+                            <img src="./images/ring/img-2.svg" alt="img" />
+                            <img src="./images/ring/img-1.svg" alt="img" />
+                            <img src="./images/ring/img-6.svg" alt="img" />
+                            <img src="./images/ring/img-5.svg" alt="img" />
+                            <img src="./images/ring/img-4.svg" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="py-24"
+                style="background: url(./images/black-bg.svg)"
+            >
+                <div class="container text-white text-center">
+                    <p class="font-normal text-xl">Не знаете, что выбрать?</p>
+                    <h2 class="font-bold text-3xl pt-4 pb-11">
+                        Посетите наши салоны в Москве
+                    </h2>
+                    <p class="font-normal text-lg pb-16">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut duis tortor vitae pellentesque egestas quam pulvinar.
+                        Pellentesque porttitor velit sit pellentesque.
+                        Suspendisse donec pretium id dignissim. Dignissim
+                        ultrices eget orci viverra. Egestas quis et ut ultrices
+                        imperdiet lectus nulla tempus. Pharetra lorem sem purus
+                        nisi libero viverra ipsum.
+                    </p>
+                    <button
+                        class="py-4 px-9 text-black font-medium text-lg bg-white"
+                    >
+                        наши салоны
+                    </button>
+                </div>
+            </section>
+            <section class="py-32">
+                <div class="container text-center">
+                    <p class="font-normal text-xl pb-4">Полезные статьи</p>
+                    <h2 class="font-bold text-center text-3xl">
+                        Лучшие советы по подбору дорогих подарков
+                    </h2>
+                    <div class="flex gap-8 py-14 flex-wrap justify-center">
+                        <div>
+                            <img src="./images/prise/prise-1.svg" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/prise/prise-2.svg" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/prise/prise-3.svg" alt="" />
+                        </div>
+                    </div>
+                    <button
+                        class="py-4 px-12 font-medium text-xl bg-[#333] text-white max-sm:text-base"
+                    >
+                        читать наш блог
+                    </button>
+                </div>
+            </section>
+            <section class="container">
+                <p class="font-normal text-xl pb-4 text-center">
+                    #ojjo_jewerly
+                </p>
+                <h2 class="font-bold text-center text-3xl pb-14">
+                    Мы в социаль ных сетях
+                </h2>
+                <div class="grid grid-cols-4">
+                    <div class="col-span-2 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/media.svg"
+                            alt="img"
+                        />
+                    </div>
+                    <div class="col-span-1 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/gallery__image.svg"
+                            alt="img"
+                        />
+                    </div>
+                    <div class="col-span-1 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/media-3.svg"
+                            alt="img"
+                        />
+                    </div>
+                    <div class="col-span-1 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/media-4.svg"
+                            alt="img"
+                        />
+                    </div>
+                    <div class="col-span-1 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/media-5.svg"
+                            alt="img"
+                        />
+                    </div>
+                    <div class="col-span-2 max-md:col-span-2 max-sm:col-span-4">
+                        <img
+                            class="w-[100%]"
+                            src="./images/social-media/media-6.svg"
+                            alt="img"
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div class="py-14">
+                <div class="container flex justify-between gap-7">
+                    <div class="w-[25%]">
+                        <h2
+                            class="font-medium text-lg pb-[10px] border-b-2 border-black border-solid"
+                        >
+                            Полезные ссылки
+                        </h2>
+                        <ul class="pt-[30px] flex flex-col gap-[15px]">
+                            <li>Доставка</li>
+                            <li>Оплата</li>
+                            <li>Акции</li>
+                            <li>Политика конфиденциальности</li>
+                        </ul>
+                    </div>
+                    <div class="w-[25%]">
+                        <h2
+                            class="font-medium text-lg pb-[10px] border-b-2 border-black border-solid"
+                        >
+                            оплата
+                        </h2>
+                        <p class="pt-[30px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ullamcorper justo, nec, pellentesque.
+                        </p>
+                        <div class="flex gap-3 pt-3">
+                            <img src="./images/footer/visa.svg" alt="">
+                            <img src="./images/footer/card.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-[25%]">
+                        <h2
+                            class="font-medium text-lg pb-[10px] border-b-2 border-black border-solid"
+                        >
+                            контакты
+                        </h2>
+                        <ul class="pt-[30px]">
+                            <li>8 (812) 234-56-55</li>
+                            <li>8 (812) 234-56-55</li>
+                            <li>ojjo@ojjo.ru</li>
+                        </ul>
+                    </div>
+                    <div class="w-[25%]">
+                        <h2
+                            class="font-medium text-lg pb-[10px] border-b-2 border-black border-solid"
+                        >
+                            социальные сети
+                        </h2>
+                        <p class="pt-[30px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ullamcorper justo, nec, pellentesque.
+                        </p>
+                        <div class="flex gap-[20px] pt-5">
+                            <img src="./images/footer/facebook.svg" alt="" />
+                            <img src="./images/footer/telegram.svg" alt="" />
+                            <img src="./images/footer/www.png" alt="" />
+                            <img src="./images/footer/youtube.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-2 border-solid border-black py-5">
+                <div class="container flex justify-between">
+                    <p>(c) 2020 OJJO jewelry</p>
+                    <p>(c) 2020 OJJO jewelry</p>
+                    <p>(c) 2020 OJJO jewelry</p>
+                    <p>(c) 2020 OJJO jewelry</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
     </body>
 </html>
